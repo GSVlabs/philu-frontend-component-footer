@@ -11,11 +11,12 @@ var NavLinks = function NavLinks(_ref) {
       href = _ref2.href,
       targetBlank = _ref2.targetBlank;
     return /*#__PURE__*/React.createElement("li", {
-      key: message,
+      key: href,
       className: "footer-nav-list__item"
     }, /*#__PURE__*/React.createElement("a", {
       href: href,
       className: "footer-nav-list__link",
+      rel: targetBlank ? 'noopener noreferrer' : '',
       target: targetBlank ? '_blank' : '_self'
     }, intl.formatMessage(message)));
   })));
@@ -25,7 +26,8 @@ NavLinks.propTypes = {
   footerLinks: PropTypes.arrayOf(PropTypes.shape({
     href: PropTypes.string.isRequired,
     message: PropTypes.object.isRequired,
-    target_blank: PropTypes.bool.isRequired
+    // eslint-disable-line react/forbid-prop-types
+    target_blank: PropTypes.bool
   }))
 };
 NavLinks.defaultProps = {

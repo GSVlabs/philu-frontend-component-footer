@@ -10,7 +10,7 @@ import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import messages from './Footer.messages';
 
-class SiteFooter extends React.Component {
+class SiteFooter extends React.PureComponent {
   render() {
     const { intl } = this.props;
 

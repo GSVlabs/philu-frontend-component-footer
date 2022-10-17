@@ -19,8 +19,8 @@ import { footerLogo, svgSprite, isFooterDark, footerLinks, footerIcons, displayC
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import messages from './Footer.messages';
-var SiteFooter = /*#__PURE__*/function (_React$Component) {
-  _inherits(SiteFooter, _React$Component);
+var SiteFooter = /*#__PURE__*/function (_React$PureComponent) {
+  _inherits(SiteFooter, _React$PureComponent);
   var _super = _createSuper(SiteFooter);
   function SiteFooter() {
     _classCallCheck(this, SiteFooter);
@@ -73,7 +73,7 @@ var SiteFooter = /*#__PURE__*/function (_React$Component) {
     }
   }]);
   return SiteFooter;
-}(React.Component);
+}(React.PureComponent);
 SiteFooter.contextType = AppContext;
 SiteFooter.propTypes = {
   intl: intlShape.isRequired

@@ -15,6 +15,7 @@ Fixes:
 
 Added:
 =====
+* add local and CI checkers: add pre-commit-hooks, .gitlab-ci.yml, style checkers (RGOeX-24524)(MC-36)
 * restyle component (RGOeX-24524)
 
   * add support of brand logo from `brand` package
