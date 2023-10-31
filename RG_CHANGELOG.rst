@@ -15,6 +15,7 @@ Fixes:
 
 Added:
 =====
+* Footer logo enhancements, added `by Raccoon Gang` text to a clickable area in the link with RG logo (RGOeX-26186)
 * add local and CI checkers: add pre-commit-hooks, .gitlab-ci.yml, style checkers (RGOeX-24524)(MC-36)
 * restyle component (RGOeX-24524)
 

@@ -40,13 +40,13 @@ class SiteFooter extends React.PureComponent {
                     alt={intl.formatMessage(messages['footer.logo.altText'])}
                   />
                 </a>
-                by Raccoon Gang
                 <a
                   className="footer-support__rg"
                   href="https://raccoongang.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  by Raccoon Gang
                   <svg className={
                     isFooterDark
                       ? 'footer-support__logo'
