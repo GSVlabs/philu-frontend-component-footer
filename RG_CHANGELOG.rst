@@ -9,6 +9,13 @@ and this project adheres to customized Semantic Versioning e.g.: `palm-rg.1`
 [Unreleased]
 ************
 
+[quince-rg.1] 2024-03-13 (Quince RG release)
+*********************************************
+
+Sync
+====
+Syncronized with upstream's version 12.3.0 (RGOeX-26371, RGOeX-26349)
+
 [palm-rg.1] 2023-11-03 (Palm RG release)
 ****************************************
 
