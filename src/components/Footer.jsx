@@ -6,6 +6,7 @@ import { getConfig } from '@edx/frontend-platform';
 import {
   footerLogo, svgSprite, isFooterDark, footerLinks, footerIcons, displayCreatedByBlock,
 } from '@edx/brand'; // eslint-disable-line import/no-unresolved
+import Zendesk from 'react-zendesk';
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import messages from './Footer.messages';
@@ -69,6 +70,7 @@ class SiteFooter extends React.PureComponent {
             </div>
           </div>
         </div>
+        {getConfig().ZENDESK_KEY && <Zendesk defer zendeskKey={getConfig().ZENDESK_KEY} />}
       </footer>
     );
   }

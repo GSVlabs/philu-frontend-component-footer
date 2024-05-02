@@ -16,6 +16,7 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 import { getConfig } from '@edx/frontend-platform';
 import { footerLogo, svgSprite, isFooterDark, footerLinks, footerIcons, displayCreatedByBlock } from '@edx/brand'; // eslint-disable-line import/no-unresolved
+import Zendesk from 'react-zendesk';
 import NavLinks from './NavLinks';
 import SocialLinks from './SocialLinks';
 import messages from './Footer.messages';
@@ -69,7 +70,10 @@ var SiteFooter = /*#__PURE__*/function (_React$PureComponent) {
       }, /*#__PURE__*/React.createElement("img", {
         src: footerLogo,
         alt: intl.formatMessage(messages['footer.logo.altText'])
-      }))))));
+      }))))), getConfig().ZENDESK_KEY && /*#__PURE__*/React.createElement(Zendesk, {
+        defer: true,
+        zendeskKey: getConfig().ZENDESK_KEY
+      }));
     }
   }]);
   return SiteFooter;
