@@ -41,22 +41,6 @@ class SiteFooter extends React.PureComponent {
                     alt={intl.formatMessage(messages['footer.logo.altText'])}
                   />
                 </a>
-                <a
-                  className="footer-support__rg"
-                  href="https://raccoongang.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  by Raccoon Gang
-                  <svg className={
-                    isFooterDark
-                      ? 'footer-support__logo'
-                      : 'footer-support__logo footer-support__logo--is-modified'
-                    }
-                  >
-                    <use href={`${svgSprite}#logoRaccoon`} />
-                  </svg>
-                </a>
               </div>
             )}
             <SocialLinks footerIcons={footerIcons} svgSprite={svgSprite} />
