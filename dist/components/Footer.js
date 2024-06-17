@@ -51,16 +51,7 @@ var SiteFooter = /*#__PURE__*/function (_React$PureComponent) {
       }, /*#__PURE__*/React.createElement("img", {
         src: isFooterDark ? 'https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png' : 'https://files.edx.org/openedx-logos/open-edx-logo-tag.png',
         alt: intl.formatMessage(messages['footer.logo.altText'])
-      })), /*#__PURE__*/React.createElement("a", {
-        className: "footer-support__rg",
-        href: "https://raccoongang.com/",
-        target: "_blank",
-        rel: "noopener noreferrer"
-      }, "by Raccoon Gang", /*#__PURE__*/React.createElement("svg", {
-        className: isFooterDark ? 'footer-support__logo' : 'footer-support__logo footer-support__logo--is-modified'
-      }, /*#__PURE__*/React.createElement("use", {
-        href: "".concat(svgSprite, "#logoRaccoon")
-      })))), /*#__PURE__*/React.createElement(SocialLinks, {
+      }))), /*#__PURE__*/React.createElement(SocialLinks, {
         footerIcons: footerIcons,
         svgSprite: svgSprite
       }), /*#__PURE__*/React.createElement("div", {
